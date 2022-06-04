@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+}
+
+:root {
+  --primary-100: hsl(333, 80%, 67%);
+  --primary-200: hsl(300, 43%, 22%);
+
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-200: hsl(300, 24%, 96%);
+  --neutral-300: hsl(303, 10%, 53%);
+}
+
+body {
+  /* background-color: var(--neutral-100); */
+  display: flex;
+  justify-content: center;
+
+  background: url("./images/bg-pattern-top-mobile.svg") left top no-repeat,
+    url("./images/bg-pattern-bottom-mobile.svg") right bottom no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  gap: 2rem;
+  max-width: 40ch;
+  user-select: none;
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lower {
+  display: flex;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero__container h2 {
+  color: var(--primary-200);
+  font-size: 40px;
+  max-width: 12ch;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -1px;
+}
+
+.hero__container p {
+  color: var(--neutral-300);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+}
+
+.reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--neutral-200);
+  border-radius: 7.5px;
+  font-weight: 400;
+}
+
+.review__stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.review h3 {
+  color: var(--primary-200);
+  font-size: 16px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: var(--primary-200);
+  color: var(--neutral-100);
+  border-radius: 7.5px;
+}
+
+.testimonial__profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.testimonial__profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.testimonial__profile--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.profile__title {
+  color: var(--primary-100);
+}
+
+.testimonial__body p {
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background: url("./images/bg-pattern-top-desktop.svg") left top no-repeat,
+      url("./images/bg-pattern-bottom-desktop.svg") right bottom no-repeat;
+    background-size: 50%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 3rem;
+    min-height: 100vh;
+    max-width: unset;
+  }
+
+  .upper {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10rem;
+  }
+
+  .lower {
+    width: 100%;
+  }
+
+  .hero__container {
+    align-items: flex-start;
+  }
+
+  .hero__container h2 {
+    font-size: 64px;
+    text-align: start;
+  }
+
+  .hero__container p {
+    max-width: 42.5ch;
+    text-align: start;
+    line-height: 1.25;
+    letter-spacing: 0.1px;
+  }
+
+  .reviews {
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .review {
+    padding: 1rem 2rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 2rem;
+    min-width: 47.5ch;
+  }
+
+  .review:nth-of-type(1) {
+    transform: translateX(-5rem);
+  }
+
+  .review:nth-of-type(2) {
+    transform: translateX(-2.5rem);
+  }
+
+  .review__stars {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .review h3 {
+    color: var(--primary-200);
+    font-size: 16px;
+    justify-self: center;
+  }
+
+  .testimonials {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .testimonial {
+    gap: 1.5rem;
+    padding: 2.5rem;
+    max-width: 40ch;
+  }
+
+  .testimonial:nth-of-type(2) {
+    transform: translateY(1rem);
+  }
+
+  .testimonial:nth-of-type(3) {
+    transform: translateY(2rem);
+  }
+}
