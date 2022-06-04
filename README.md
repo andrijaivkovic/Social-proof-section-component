@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-challenge-using-html-and-css-flexbox-tCBZPOF-8d](https://www.frontendmentor.io/solutions/social-proof-section-challenge-using-html-and-css-flexbox-tCBZPOF-8d)
 
 - Live Site URL: [https://social-proof-section-ai.netlify.app/](https://social-proof-section-ai.netlify.app/)
 
